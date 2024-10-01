@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hashing</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACcElEQVR4nO1ZzWoUQRAeiI+g21W7MywGdwVDTnoRsl2TRRfyAPEoqCA+ghg8Zi8qziBIcvOmzOYY8QGCB58i/lwU8WI2SjBQ0rMyTuJs3N6Z6WS0Pyjq0NBVX1VXT02141hYWFicaAAsnBFIawLkB0C5D0hcrsh9ZUsgrQvROZvLeSE6XUD6VL7TNI7MTg3l1amcR6TTgPLj8TlPsQiQn4W4XNOPPtJasgnKtwA+Oc7yjFM6lmcQaQFQbqfsP9XeRgC9TyIRO28WQsjFdAC1N0gXrJnIHwadShe2o4v0OTy8xtHj8zwIXvEg/MaDkMsSSPnAz5+0NQnI4S/2wz+dD4dlOs5ZBAbBDm8ErYkJCOzcAqQ3Sh8gMIp8psH+9dvc9Lqx1lnjiQiEzFH40skLjoLdcQY9dzE2prTOGk9MINjNT0DH4IRrrLGfJcBVyQCA7AuQ35XOOkKqGF3Xz90quK4/trBzERBAe6NehPayCMw2u4X1O7PNbgkZGPMhq0wG4C8ETn4NoCXANgNY8SL2MtqPwgiYuEbvXbvB9bof60pmgDOkUtcoWwL4n2XAK/iHhk0TKPqX8uHNOzzX6sXaCIGixSvzO2BCIN+XOHuwZcr5Hy+CxPlGw9cnkB4tqlmlaQJbqysJgUtzS1MQQFr/nUK5rWaVKhMmIr+1usIXLywlBO5O00qoxwVA+lpUvzOtzLd7/OXZA30CCrU6XTnOB475do9f9++nM3RgzDnxQ4eazwugdyaemBoNPz7z6tikIz+SYNPJCzUljgetBq9THjmvN9w9ksRG0FKD1qPmpIVJpGwEmxw9OleI8xYW/xh+An5OiaXP4h7pAAAAAElFTkSuQmCC">
+    <link rel="stylesheet" href="./index.style.css" >
+  </head>
+  <body>
+    <div>
+        <form id="bynaryForm">
+          <label for="inputText">Initial text:</label>
+          <textarea id="inputText"></textarea>
+          <div>
+              <label for="separator">Separator:</label>
+              <input type="text" id="separator" />
+          </div>
+          <input type="submit" id="submitBtn" value="Submit" />
+          <textarea id="output" readonly></textarea>
+        </form>
+    </div>
+    <div>
+        <form id="SHAForm">
+          <p>SHA256</p>
+          <input type="submit" value="Submit" id="submitBtn"/>
+          <input id="outputSHA"></input>
+        </form>
+    </div>
+    <div>
+        <div id="RSAform">
+            <label for="inputTextRSAPublic">Public key:</label>
+            <textarea id="inputTextRSAPublic"></textarea>         
+            <label for="inputTextRSAPrivate">Private key:</label>
+            <textarea id="inputTextRSAPrivate"></textarea>
+            <form id="GenerateKey">
+                <input type="submit" id="submitBtn" value="Generate Keys">
+            </form>    
+            <form id="encryptRSA">
+                <input type="text" id="encrypt" readonly>
+                <input type="submit" value="encrypt" id="submitBtn">
+            </form>
+            <form id="decryptRSA">
+                <input type="text" id="decrypt" readonly>
+                <input type="submit" value="decrypt" id="submitBtn">
+            </form>
+        </div>
+  
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
+
+
+
+
+
